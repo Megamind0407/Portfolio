@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     outline: none;
@@ -8,21 +8,21 @@
     box-sizing: border-box;
 }
 
-img{
+img {
     width: 100%;
     display: flex;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
-    background-color: #18181B;
+    background-color: #19181b;
 }
 
-nav{
+nav {
     max-width: 1200px;
     margin: auto;
     padding: 2rem 1rem;
@@ -32,24 +32,24 @@ nav{
     gap: 2rem;
 }
 
-.nav-logo{
+.nav-logo {
     max-width: 100px;
 }
 
-.nav-links{
+.nav-links {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 3rem;
 }
 
-.link a{
+.link a {
     position: relative;
     padding-bottom: 0.75rem;
     color: #fff;
 }
 
-.link a::after{
+.link a::after {
     content: "";
     position: absolute;
     height: 2px;
@@ -60,37 +60,68 @@ nav{
     transition: all 0.3s ease;
 }
 
-.link a:hover::after{
+.link a:hover::after {
     width: 70%;
 }
 
-.btn{
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #1d4ed8;
-    border-radius: 5px;
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-.btn:hover{
-    background-color: #1e40af;
+
+.button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255, 255, 255, 0.6);
+    --animation-color:#00FFFF;
+    --fs-size: 1.5em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
 }
 
-.container{
+
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+
+.button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+.container {
     max-width: 1200px;
     margin: auto;
     padding: 5rem 2rem;
 }
 
-.blur{
+.blur {
     position: absolute;
     box-shadow: 0 0 1000px 50px #1d4ed8;
     z-index: -100;
 }
 
-header{
+header {
     position: relative;
     padding-top: 2rem;
     display: grid;
@@ -99,14 +130,14 @@ header{
     gap: 2rem;
 }
 
-header .content h4{
+header .content h4 {
     margin-bottom: 1rem;
     color: #ccc;
     font-size: 1rem;
     font-weight: 600;
 }
 
-header .content h1{
+header .content h1 {
     color: #fff;
     margin-bottom: 1rem;
     font-size: 3rem;
@@ -114,21 +145,21 @@ header .content h1{
     line-height: 4rem;
 }
 
-header .content h1 span{
+header .content h1 span {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #fff;
 }
 
-header .content p{
+header .content p {
     margin-bottom: 2rem;
     color: #ccc;
 }
 
-header .image{
+header .image {
     position: relative;
 }
 
-header .image::before{
+header .image::before {
     content: "o";
     position: absolute;
     top: 0;
@@ -142,28 +173,28 @@ header .image::before{
     z-index: -100;
 }
 
-header .image img{
+header .image img {
     max-width: 600px;
     margin: auto;
 }
 
-section .header{
+section .header {
     margin-bottom: 1rem;
     color: #fff;
     text-align: center;
     font-size: 2.25rem;
     font-weight: 600;
-    
+
 }
 
-.features{
+.features {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
-.features .card{
+.features .card {
     background-color: #27272a;
     padding: 1rem;
     border: 2px solid transparent;
@@ -171,12 +202,12 @@ section .header{
     transition: all 0.3s ease;
 }
 
-.features .card:hover{
+.features .card:hover {
     background-color: #323232;
     border-color: #fff;
 }
 
-.features .card span{
+.features .card span {
     display: inline-block;
     background-color: #1e40af;
     padding: 2px 9px;
@@ -186,28 +217,28 @@ section .header{
     border-radius: 5px;
 }
 
-.features .card h4{
+.features .card h4 {
     margin-bottom: 0.5rem;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.features .card p{
+.features .card p {
     color: #ccc;
     margin-bottom: 1rem;
 }
 
-.features .card a{
+.features .card a {
     color: #fff;
     transition: all 0.3s ease;
 }
 
-.features .card a:hover{
+.features .card a:hover {
     color: #1e40af;
 }
 
-.sub-header{
+.sub-header {
     max-width: 600px;
     margin: auto;
     position: relative;
@@ -215,124 +246,138 @@ section .header{
     top: 20%;
     color: #ccc;
 }
-.skill{
-    
-    width : 160px;
-    height : 160px;
-    position : relative;
+
+.skill {
+
+    width: 160px;
+    height: 160px;
+    position: relative;
     margin: 102px;
     display: inline-block;
     align-items: center;
 }
-.outer{
-    width : 160px;
-    height : 160px;
-    border-radius : 50%;
-    padding: 20px;
-    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-                    -6px -6px 10px -1px rgba(8, 7, 7, 0.7)
 
+.outer {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(8, 7, 7, 0.7)
 }
-.inner{
-    width : 120px;
-    height : 120px;
-    border-radius : 50%;
+
+.inner {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: inset 4px 4px 6px -1px rgba(10, 10, 10, 0.941),
-                inset -4px -4px 6px -1px rgba(8, 7, 7, 0.7),
-                -0.5px -0.5px 0px rgb(15, 14, 14),
-                0.5px 0.5px 0px  rgba(0,0,0,0.15),
-                0px 12px 10px -10px rgba(0,0,0,0.05);
+        inset -4px -4px 6px -1px rgba(8, 7, 7, 0.7),
+        -0.5px -0.5px 0px rgb(15, 14, 14),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
 
-}
-#number{
+#number {
     font-weight: 600;
-    color :#d1d1d1
+    color: #d1d1d1
 }
-#number1{
+
+#number1 {
     font-weight: 600;
-    color :#d1d1d1
+    color: #d1d1d1
 }
-#number2{
+
+#number2 {
     font-weight: 600;
-    color :#d1d1d1
+    color: #d1d1d1
 }
-.circle{
-    fill:none;
+
+.circle {
+    fill: none;
     stroke: url(#GradientColor);
     stroke-width: 20px;
     stroke-dasharray: 472;
     stroke-dashoffset: 472;
     animation: anim 2s linear forwards;
 }
-.circle{
-    fill:none;
+
+.circle {
+    fill: none;
     stroke: url(#GradientColor);
     stroke-width: 20px;
     stroke-dasharray: 472;
     stroke-dashoffset: 472;
     animation: anim 2s linear forwards;
 }
-.circle1{
-    fill:none;
+
+.circle1 {
+    fill: none;
     stroke: url(#GradientColor);
     stroke-width: 20px;
     stroke-dasharray: 472;
     stroke-dashoffset: 472;
     animation: anim1 2s linear forwards;
 }
-.circle2{
-    fill:none;
+
+.circle2 {
+    fill: none;
     stroke: url(#GradientColor);
     stroke-width: 20px;
     stroke-dasharray: 472;
     stroke-dashoffset: 472;
     animation: anim2 2s linear forwards;
 }
-svg{
+
+svg {
     position: absolute;
-    top : 0;
+    top: 0;
     left: 0;
 }
 
-@keyframes anim{
-    100%{
+@keyframes anim {
+    100% {
         stroke-dashoffset: 118;
     }
 }
-@keyframes anim1{
-    100%{
+
+@keyframes anim1 {
+    100% {
         stroke-dashoffset: 94;
     }
 }
-@keyframes anim2{
-    100%{
+
+@keyframes anim2 {
+    100% {
         stroke-dashoffset: 141;
     }
 }
 
-.ui-card{
+.ui-card {
     width: 350px;
-    overflow:hidden;
+    overflow: hidden;
     position: relative;
     display: inline-block;
+    margin: 10px;
 }
-.ui-card.img{
+
+.ui-card.img {
     transform: scale(1.3);
     transition: all 0.3s ease-out;
-   
+
 }
-.ui-card:hover img{
+
+.ui-card:hover img {
     transform: translateY(30px);
     opacity: 0.3;
     position: relative;
     display: inline-block;
 }
 
-.title{
+.title {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -342,50 +387,52 @@ svg{
     color: #fff;
     font-size: 18px;
 }
-.title h3{
+
+.title h3 {
     font-weight: 700;
     font-size: 32px;
     margin: 0 0 20px;
     transform: translateY(30px);
     opacity: 0;
     transition: all 0.3s ease-out;
-    
+
 }
-.title a{
-    color:#fff;
-    background:#2c2f2e7d ;
+
+.title a {
+    color: #fff;
+    background: #2c2f2e7d;
     display: inline-block;
-    padding:10px 25px;
+    padding: 10px 25px;
     text-decoration: none;
     border-radius: 5px;
     opacity: 0;
     transition: all 0.3s ease-out 0.4s;
 }
 
-.title a:hover{
+.title a:hover {
     background: #0e6290;
 }
 
-.ui-card:hover .title h3{
+.ui-card:hover .title h3 {
     transform: translateY(0px);
     opacity: 1;
 }
 
-.ui-card:hover .title a{
+.ui-card:hover .title a {
     transform: translateY(0px);
     opacity: 1;
 }
 
 
 
-.pricing{
+.pricing {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
-.pricing .card{
+.pricing .card {
     padding: 3rem 2rem;
     background-color: #27272a;
     display: flex;
@@ -395,24 +442,24 @@ svg{
     transition: all 0.3s ease;
 }
 
-.pricing .card:hover{
+.pricing .card:hover {
     background-color: #323232;
     border-color: #fff;
 }
 
-.pricing .card .content{
+.pricing .card .content {
     flex: 1;
     margin-bottom: 2rem;
 }
 
-.pricing .card h4{
+.pricing .card h4 {
     margin-bottom: 1rem;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-.pricing .card h3{
+.pricing .card h3 {
     color: #fff;
     padding-bottom: 1rem;
     margin-bottom: 2rem;
@@ -421,52 +468,52 @@ svg{
     border-bottom: 2px dashed #fff;
 }
 
-.pricing .card p{
+.pricing .card p {
     color: #fff;
     margin-bottom: 0.75rem;
 }
 
-.pricing .card p i{
+.pricing .card p i {
     color: #ccc;
     font-size: 1.2rem;
     margin-right: 0.3rem;
 }
 
-.pricing .card button{
+.pricing .card button {
     color: #fff;
     background-color: transparent;
     border: 2px solid #fff;
 }
 
-.pricing .card button:hover{
+.pricing .card button:hover {
     background-color: #1e40af;
     border-color: #1e40af;
 }
 
-footer{
+footer {
     position: relative;
     display: grid;
     grid-template-columns: 400px repeat(3, 1fr);
     gap: 2rem;
 }
 
-footer .column .logo{
+footer .column .logo {
     max-width: 100px;
     margin-bottom: 2rem;
 }
 
-footer .column p{
+footer .column p {
     color: #ccc;
     margin-bottom: 2rem;
 }
 
-footer .column .socials{
+footer .column .socials {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-footer .column .socials a{
+footer .column .socials a {
     color: #ccc;
     border: 1px solid #ccc;
     padding: 5px 10px;
@@ -475,31 +522,37 @@ footer .column .socials a{
     transition: all 0.3s ease;
 }
 
-footer .column .socials a:hover{
+footer .column .socials a:hover {
     color: #fff;
     background-color: #1d4ed8;
     border-color: #1d4ed8;
 }
 
-footer .column h4{
+footer .column h4 {
     color: #fff;
     margin-bottom: 2rem;
     font-size: 1.2rem;
+    position: relative;
     font-weight: 500;
+    right: 20%;
 }
 
-footer .column > a{
+footer .column>a {
+
     display: block;
     color: #ccc;
     margin-bottom: 1rem;
     transition: all 0.3s ease;
+    position: relative;
+    right: 20%;
+
 }
 
-footer .column > a:hover{
+footer .column>a:hover {
     color: #1d4ed8;
 }
 
-.copyright{
+.copyright {
     max-width: 1200px;
     margin: auto;
     padding: 1rem;
@@ -508,41 +561,46 @@ footer .column > a:hover{
     text-align: center;
 }
 
-@media (width < 900px){
-    .nav-links{
+@media (width < 900px) {
+    .nav-links {
         display: none;
     }
-    header{
+
+    header {
         grid-template-columns: repeat(1, 1fr);
     }
-    header .image{
+
+    header .image {
         grid-area: 1/1/2/2;
     }
-    .features{
+
+    .features {
         grid-template-columns: repeat(2, 1fr);
     }
-    .pricing{
+
+    .pricing {
         grid-template-columns: repeat(2, 1fr);
     }
-    footer{
+
+    footer {
         grid-template-columns: 1fr 200px;
     }
 }
 
-@media (width < 600px){
-    header .image::before{
+@media (width < 600px) {
+    header .image::before {
         display: none;
     }
 
-    .features{
+    .features {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .pricing{
+    .pricing {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    footer{
+    footer {
         grid-template-columns: 1fr 150px;
     }
 }
