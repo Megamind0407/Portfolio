@@ -32,8 +32,8 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-
 }
+
 
 .nav-logo {
     max-width: 90px;
@@ -123,6 +123,8 @@ button:active {
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color))
 }
+
+
 
 .container {
     max-width: 1200px;
@@ -288,27 +290,20 @@ section .header {
     color: #050505;
 }
 
-/* .skill {
-    width: 160px;
-    height: 160px;
-    position: relative;
-    margin: 102px;
-    display: inline-block;
-    align-items: center;
-} */
-.skill {
+
+.skills {
     margin:50px;
     display:grid;
     align-items: center;
 }
-.skill h3{
+.skills h3{
     color:#050505;
     text-align: center;
     margin-bottom: 2rem;
     font-size: 20px;
 }
 
-.skill .skill-1 .images {
+.skills .images {
     display: flex;
     position: relative;
     margin-top: auto;
@@ -317,47 +312,9 @@ section .header {
     align-items: center;
     justify-content: center;
 }
-.skill .skill-1 .images img{
+.skills .images img{
     max-width: 60px;
 }
-.outer {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    padding: 20px;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-        -6px -6px 10px -1px rgba(8, 7, 7, 0.7)
-}
-
-.inner {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: inset 4px 4px 6px -1px rgba(11, 11, 11, 0.941),
-        inset -4px -4px 6px -1px rgba(8, 7, 7, 0.7),
-        -0.5px -0.5px 0px rgb(15, 14, 14),
-        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
-        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
-}
-
-#number {
-    font-weight: 700;
-    color: #080303
-}
-
-#number1 {
-    font-weight: 700;
-    color: #080303
-}
-
-#number2 {
-    font-weight: 700;
-    color: #080303
-}
 
 .circle {
     fill: none;
@@ -368,32 +325,7 @@ section .header {
     animation: anim 2s linear forwards;
 }
 
-.circle {
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;
-    animation: anim 2s linear forwards;
-}
 
-.circle1 {
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;
-    animation: anim1 2s linear forwards;
-}
-
-.circle2 {
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;
-    animation: anim2 2s linear forwards;
-}
 
 svg {
     position: absolute;
@@ -401,23 +333,6 @@ svg {
     left: 0;
 }
 
-@keyframes anim {
-    100% {
-        stroke-dashoffset: 118;
-    }
-}
-
-@keyframes anim1 {
-    100% {
-        stroke-dashoffset: 94;
-    }
-}
-
-@keyframes anim2 {
-    100% {
-        stroke-dashoffset: 141;
-    }
-}
 
 .ui-card {
     width: 350px;
@@ -485,73 +400,6 @@ svg {
     transform: translateY(0px);
     opacity: 1;
 }
-
-
-
-/* .pricing {
-    margin-top: 4rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-.pricing .card {
-    padding: 3rem 2rem;
-    background-color: #27272a;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid transparent;
-    border-radius: 15px;
-    transition: all 0.3s ease;
-}
-
-.pricing .card:hover {
-    background-color: #323232;
-    border-color: #fff;
-}
-
-.pricing .card .content {
-    flex: 1;
-    margin-bottom: 2rem;
-}
-
-.pricing .card h4 {
-    margin-bottom: 1rem;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.pricing .card h3 {
-    color: #fff;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    font-weight: 600;
-    border-bottom: 2px dashed #fff;
-}
-
-.pricing .card p {
-    color: #fff;
-    margin-bottom: 0.75rem;
-}
-
-.pricing .card p i {
-    color: #ccc;
-    font-size: 1.2rem;
-    margin-right: 0.3rem;
-}
-
-.pricing .card button {
-    color: #fff;
-    background-color: transparent;
-    border: 2px solid #fff;
-}
-
-.pricing .card button:hover {
-    background-color: #1e40af;
-    border-color: #1e40af;
-} */
 
 footer {
     padding: 0.5rem 0.5rem;
