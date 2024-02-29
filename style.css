@@ -19,11 +19,11 @@ a {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color:#fff
+    background-color:#fff; 
 }
 
 nav {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,11 +31,12 @@ nav {
     background-color: #27272a;
     position: sticky;
     top: 0;
-    z-index: 1000; 
+    z-index: 1000;
+
 }
 
 .nav-logo {
-    max-width: 100px;
+    max-width: 90px;
 }
 
 .nav-links {
@@ -49,6 +50,7 @@ nav {
     position: relative;
     padding-bottom: 0.75rem;
     color: #fff;
+    font-size: large;
 }
 
 .link a::after {
@@ -128,6 +130,33 @@ button:active {
     padding: 5rem 2rem;
 }
 
+.project-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+.project-container .header{
+    margin-bottom: 3rem;
+    color: #070303;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+
+.contact-container .header{
+    margin-bottom: 3rem;
+    color: #070303;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
 
 
 header {
@@ -140,6 +169,7 @@ header {
 }
 
 header .content h4 {
+
     margin-bottom: 2rem;
     color: #0a0606;
     font-size: 1.2rem;
@@ -190,7 +220,7 @@ header .image img {
 }
 
 section .header {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     color: #070303;
     text-align: center;
     font-size: 2.25rem;
@@ -524,7 +554,7 @@ svg {
 } */
 
 footer {
-    padding: 2rem 1rem;
+    padding: 0.5rem 0.5rem;
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -534,6 +564,7 @@ footer {
 
 footer .column .logo {
     max-width: 100px;
+    margin-top:2rem ;
     margin-bottom: 2rem;
 }
 
@@ -548,6 +579,7 @@ footer .column .socials {
     display:inline-block;
     align-items:center;
     gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 footer .column .socials a {
