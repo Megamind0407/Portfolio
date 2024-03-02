@@ -19,7 +19,7 @@ a {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color:#fff; 
+    background-color: #fff;
 }
 
 nav {
@@ -41,8 +41,8 @@ nav {
 
 .nav-links {
     list-style: none;
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     gap: 3rem;
 }
 
@@ -69,13 +69,13 @@ nav {
 }
 
 .button {
-    margin:0;
-    height:auto;
+    margin: 0;
+    height: auto;
     background: transparent;
     padding: 0;
     border: none;
     cursor: pointer;
-    right:20%;
+    right: 20%;
 }
 
 button {
@@ -124,20 +124,21 @@ button:active {
     filter: drop-shadow(0 0 23px var(--animation-color))
 }
 
-
-
 .container {
     max-width: 1200px;
     margin: auto;
     padding: 5rem 2rem;
 }
 
-.project-container{
+
+
+.project-container {
     max-width: 1200px;
     margin: auto;
     padding: 5rem 2rem;
 }
-.project-container .header{
+
+.project-container .header {
     margin-bottom: 3rem;
     color: #070303;
     text-align: center;
@@ -154,7 +155,7 @@ button:active {
 }
 
 
-.contact-container .header{
+.contact-container .header {
     margin-bottom: 3rem;
     color: #070303;
     text-align: center;
@@ -199,8 +200,8 @@ header .content p {
 }
 
 header .image {
-    position:relative;
-    left:20%;
+    position: relative;
+    left: 20%;
 }
 
 header .image::before {
@@ -220,7 +221,7 @@ header .image::before {
 header .image img {
     max-width: 500px;
     margin: auto;
-    right:0;
+    right: 0;
 }
 
 section .header {
@@ -294,12 +295,13 @@ section .header {
 
 
 .skills {
-    margin:50px;
-    display:grid;
+    margin: 50px;
+    display: grid;
     align-items: center;
 }
-.skills h3{
-    color:#050505;
+
+.skills h3 {
+    color: #050505;
     text-align: center;
     margin-bottom: 2rem;
     font-size: 20px;
@@ -310,11 +312,12 @@ section .header {
     position: relative;
     margin-top: auto;
     margin-bottom: 2rem;
-    gap:4rem;
+    gap: 4rem;
     align-items: center;
     justify-content: center;
 }
-.skills .images img{
+
+.skills .images img {
     max-width: 60px;
 }
 
@@ -407,27 +410,28 @@ footer {
     padding: 0.5rem 0.5rem;
     display: flex;
     align-items: center;
-    gap: 2rem;
-    background-color:#343737;
-    margin:0;
+    gap: 1rem;
+    background-color: #343737;
+    margin: 0;
 }
 
 footer .column .logo {
     max-width: 100px;
-    margin-top:2rem ;
-    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 footer .column p {
     color: #cfdfe0;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     font-weight: 600;
-    font-size: larger;
+    font-size: medium;
 }
 
 footer .column .socials {
-    display:inline-block;
-    align-items:center;
+    display: inline-block;
+    align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
 }
@@ -448,14 +452,7 @@ footer .column .socials a:hover {
 
 }
 
-footer .column h4 {
-    color: #120909;
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-    position: relative;
-    font-weight: 500;
-    right: 20%;
-}
+
 
 footer .column>a {
 
