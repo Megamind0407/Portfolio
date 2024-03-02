@@ -29,7 +29,6 @@ nav {
     justify-content: space-between;
     gap: 2rem;
     background-color: #27272a;
-    position: sticky;
     top: 0;
     z-index: 1000;
 }
@@ -88,6 +87,7 @@ button {
     font-size: 1rem;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 button:hover {
@@ -123,6 +123,31 @@ button:active {
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color))
 }
+
+#home-button {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 9px;
+    background: #0d0d0d;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#home-button:hover{
+    box-shadow: 7px 5px 56px -14px #C3D900;
+}
+
+#home-button:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px #C3D900;
+
+}
+
 
 .container {
     max-width: 1200px;
